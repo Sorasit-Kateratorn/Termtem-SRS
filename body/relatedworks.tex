@@ -6,24 +6,42 @@
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.5\textwidth]{examples/asana-competitive-landscape.jpg}
-    \caption{Competitive Landscape by Asana}
+    \includegraphics[width=0.5\textwidth]{competition.png}
+    \caption{Comparison Table of TermTem and existing competitors}
 \end{figure}
 
-<TIP: 
-Refer to an article "How to create a competitive analysis (with
-examples)" by Asana. You can use the Competitor Landscape or
-Competitor Analysis Framework for your project.
-/>
 
 \section{Literature Review}
 \label{section:literature-review}
 
-<TIP: Review academic papers or technical reports
-that are relevant to your project.
-For each source, briefly summarize its key findings and
-then explain how it informs your own design or implementation decisions.
-The goal is not just to describe what others have done,
-but to build a justification for your own technical choices.
-For example, if you chose a particular algorithm or architecture,
-cite the work that supports that decision. />
+\subsection{NECTEC TTRS System}
+
+The Telecommunication Relay Service (TTRS) developed by NECTEC is a system designed to help hearing-impaired users communicate with hearing individuals. The system provides services such as remote sign language interpretation, emergency communication, and video-based interaction. :contentReference[oaicite:0]{index=0}
+
+However, the system relies heavily on human interpreters and does not fully utilize AI or automated avatar based sign language generation. This limits scalability and real time usability in everyday communication.
+
+This work informs our system design by highlighting the importance of supporting communication between hearing and deaf users. However, TermTem improves upon this by introducing AI-based automation and avatar driven sign language representation.
+
+\subsection{Thai Sign Language Recognition Research (2024)}
+
+The research on Thai Sign Language alphabet detection using hand gestures focuses on applying machine learning techniques to recognize hand signs. The system demonstrates that AI can effectively classify sign language gestures based on visual input.
+
+However, this approach mainly focuses on recognition and does not provide a complete communication system. It lacks features such as avatar visualization and interactive communication support.
+
+This research supports our decision to use AI for gesture recognition, but TermTem extends this idea by providing a full communication pipeline from hearing users to deaf users through animated sign language avatars.
+
+\subsection{KARA Technology}
+
+KARA Technology provides AI-based solutions that include avatar systems and communication tools for accessibility. The system demonstrates the potential of using avatars to enhance human-computer interaction.
+
+However, the platform does not specifically support Thai Sign Language, which limits its usability for Thai users.
+
+This motivates our system to focus specifically on Thai language support while integrating avatar-based communication to improve accessibility.
+\newpage
+\subsection{MySL Web Application (Senior Kasetsart University Project)}
+
+The MySL Web Application project focuses on sign language learning and communication support. It provides AI-based features and educational tools to help users understand sign language.
+
+However, the system lacks real time interpreter functionality and avatar based communication, which limits its effectiveness in real world communication scenarios.
+
+This project influences our design by incorporating educational features, but TermTem enhances it by combining learning, communication, and AI-based translation into a single platform.
