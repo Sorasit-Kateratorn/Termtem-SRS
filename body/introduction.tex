@@ -6,15 +6,19 @@
 
 Communication is an essential part of daily life, yet people with hearing disabilities often face significant 
 challenges when interacting with others. Many members of the deaf community rely on sign language as 
-their primary form of communication,but most hearing people do not understand it.
+their primary form of communication, but most hearing people do not understand it.
 This gap creates communication barriers in situations such as education, healthcare, employment, and emergency services.
+In Thailand, where Thai Sign Language is widely used, these challenges are even more evident due to the limited availability of 
+professional interpreters, especially in urgent or everyday scenarios.
 
-In Thailand, many individuals with hearing disabilities depend on Thai Sign Language,
-but professional interpreters are limited and not always available, especially in urgent situations.
-As a result, communication between individuals with hearing disabilities and hearing users can be difficult.
+Although modern technologies such as artificial intelligence, speech recognition, and computer vision have been developed to support communication, 
+existing solutions still have limitations. Many systems focus mainly on direct or word by word translation, 
+which may not accurately capture the meaning, context, or natural flow of communication. Additionally, some solutions are not designed for real-time interaction 
+or are not user friendly for everyday use.
 
-Recent advances in artificial intelligence and machine learning provide new opportunities to address this problem.
-Technologies such as speech recognition, and natural language processing enable systems to interpret gestures and speech automatically.
+Therefore, there is a need for a more effective communication system that can provide natural and continuous interpretation rather than 
+simple word by word translation. Such a system should support smooth interaction between hearing disabilities individuals and hearing users 
+while maintaining context and meaning during communication.
 
 This project proposes TermTem, an AI-based communication assistant that integrates sign language recognition, speech recognition, 
 conversational AI, and real time animation displayed through avatar to support real time communication between hearing disability individuals and hearing users.
@@ -28,9 +32,12 @@ or emergency cases, communication becomes difficult because sign language interp
 Existing solutions mainly rely on human interpreters or limited translation tools, which may be costly, unavailable, 
 or not suitable for real time communication. 
 
+In addition, many current technological solutions focus on word by word translation, which may not accurately capture the meaning,
+context or natural flow of interaction between users.
+
 Therefore, there is a need for an intelligent system that can assist in communication. Such a system should be able to translate
 sign language, speech, and text in real time to reduce communication barriers and improve accessibility for people with hearing disabilities.
-
+\newpage
 \section{Solution Overview}
 \label{section:solution-overview}
 
@@ -41,13 +48,18 @@ conversational AI, and real time animation displayed through avatar to support r
 \label{subsection:features}
 
 \begin{enumerate}[leftmargin=80pt]
-    \item Sign Language Recognition: The system can recognize Thai sign language gestures from video input and convert them into text.
-    \item Speech Recognition: Speech from hearing users can be converted into text so that the system can process and interpret the message.
-    \item Sign Language Animation Generation: The system can generate sign language animations through an avatar to help users with hearing disabilities understand spoken language.
-    \item Conversational AI Assistant: The system integrates a conversational AI model that can understand user inputs and generate meaningful responses.
-    \item Real-time Communication Support: The system is designed to provide near real time responses to enable smooth communication between users.
+    \item Speech to Sign Translation with Avatar: The system converts speech or text input from hearing users into Thai Sign Language animations displayed through an avatar, enabling hearing disabilities users to understand messages in a natural and visual form.
+    \item Speech Recognition: The system captures and converts spoken language from hearing users into text for further processing by the system.
+    \item Sign Language Animation Generation: The system generates accurate and continuous sign language animations using an avatar to represent gestures clearly and naturally, focusing on smooth communication rather than word by word translation.
+    \item Conversational AI Assistant: The system uses a conversational AI model to understand user intent and generate meaningful responses, improving the quality and flow of communication.
 \end{enumerate}
+\subsection{Extra Features}
+\label{subsection:features}
 
+\begin{enumerate}[leftmargin=80pt]
+    \item Learning Module: The system provides learning support through interactive quizzes to help users learn and improve their Thai Sign Language skills.
+\end{enumerate}
+\newpage
 \section{Target User}
 \label{section:target-user}
 

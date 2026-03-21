@@ -9,10 +9,11 @@
 \begin{tabular}{|l|p{10cm}|}
 \hline
 \textbf{Stakeholder} & \textbf{Role} \\ \hline
-Users with hearing disabilities  & Primary users who rely on the system for communication. \\ \hline
-Hearing users & People who communicate within deaf community. \\ \hline
+Users with hearing disabilities  & Primary users who rely on the system for communication from hearing users through sign language animations. \\ \hline
+General hearing users & Individuals who want to communicate with hearing disabilities users using speech or text, which will be translated into sign language animations. \\ \hline
+Learners of Thai Sign Language & Users who want to learn Thai Sign Language through visual demonstrations and interactive features such as quizzes. \\ \hline
 System developers & Responsible for designing and implementing the system. \\ \hline
-Organizations and institutions  & Hospitals, schools, or agencies that may use the system. \\ \hline
+Organizations staff member  & Hospitals, schools, or agencies that may use the system. \\ \hline
 \end{tabular}
 \end{table}
 
@@ -21,17 +22,25 @@ Organizations and institutions  & Hospitals, schools, or agencies that may use t
 \label{section:user-stories-use-cases}
 
 \begin{itemize}
-\item As a users with hearing disabilities, I want to translate my sign language gestures into text so that hearing users can understand my message.
+\item As a general hearing user, I want my speech to be converted into sign language animation through an avatar so that hearing disabilities users can understand me clearly.
 
-\item As a hearing user, I want my speech to be converted into sign language animation so that deaf users can understand me.
+\item As a general hearing user, I want to type text and have it translated into sign language animation so that I can communicate in situations where speaking is not possible.
 
-\item As a learner, I want to practice Thai sign language using the system so that I can improve my communication skills.
+\item As a user with hearing disabilities, I want to receive information in sign language animation so that I can understand messages naturally without relying on text.
+
+\item As a learner of Thai Sign Language, I want to view correct sign language animations for specific words or sentences so that I can learn proper gestures step by step.
+
+\item As a learner of Thai Sign Language, I want to take quizzes or practice exercises based on sign language animations so that I can test and improve my understanding of sign language.
+
+\item As an organization staff member, I want to communicate with hearing disabilities users using the system so that I can provide services effectively.
 
 \section{Use Case Diagrams}
 \label{section:use-case-diagrams}
-<TIP: Include a UML Use Case Diagram that shows all actors and
-their relationships to the use cases you described.
-Also provide the written description for each use case. />
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{usecase_diagram.png}
+    \caption{Use Case Diagram of TermTem System}
+\end{figure}
 
 \section{User Interface Design}
 \label{section:user-interface-design}
