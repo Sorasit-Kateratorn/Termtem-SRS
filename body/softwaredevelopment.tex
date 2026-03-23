@@ -1,23 +1,113 @@
 \chapter{Software Development}
 \label{chap:software-development}
 
+% --------------------------------------------------
+
 \section{Software Development Methodology}
 \label{section:software-development-methodology}
-<TIP: Describe your software development methodology in this section. />
+
+The development of the TermTem system follows an \textbf{Agile Software Development Methodology}, specifically adopting an iterative and incremental approach. This methodology is chosen due to the experimental nature of AI-based systems, where continuous improvement, testing, and refinement are required.
+
+The development process is divided into multiple short iterations (sprints), each focusing on specific features such as sign language recognition, chatbot integration, and animation generation. At the end of each iteration, a working prototype is produced and evaluated.
+
+Key characteristics of the development methodology include:
+
+\begin{itemize}
+    \item \textbf{Iterative Development:} Features are developed in small increments, allowing frequent testing and validation.
+    \item \textbf{Continuous Integration:} System components such as the frontend, backend, and AI modules are integrated regularly to ensure compatibility.
+    \item \textbf{User-Centered Design:} Feedback from target users, particularly individuals with hearing and speech impairments, is incorporated into the development process to improve usability.
+    \item \textbf{Rapid Prototyping:} Early prototypes are built to validate key functionalities such as real-time sign language recognition and response generation.
+\end{itemize}
+
+This methodology enables flexibility in adapting to challenges such as dataset limitations, model performance issues, and real-time system constraints.
+
+% --------------------------------------------------
 
 \section{Technology Stack}
 \label{section:technology-stack}
-<TIP: Describe your technology stack here. See the following example from ThaiProgrammer.org />
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.5\textwidth]{examples/tech-stack.png}
-    \caption{Example technology stack}
-\end{figure}
+
+The TermTem system is built using a combination of modern technologies that support mobile development, backend services, artificial intelligence, and real-time processing.
+
+\begin{itemize}
+    \item \textbf{Frontend:}
+    \begin{itemize}
+        \item Flutter: Used to develop a cross-platform mobile application with support for real-time camera input, audio processing, and interactive user interfaces.
+    \end{itemize}
+
+    \item \textbf{Backend:}
+    \begin{itemize}
+        \item Go (Golang): Used to implement a high-performance backend server responsible for handling API requests, managing sessions, and coordinating AI processing pipelines.
+    \end{itemize}
+
+    \item \textbf{Artificial Intelligence and Machine Learning:}
+    \begin{itemize}
+        \item MediaPipe: Used for extracting skeletal joint coordinates from real-time video input.
+        \item LSTM Model: Used for recognizing Thai Sign Language gestures based on sequential keypoint data.
+        \item Large Language Model (LLM): Used to generate context-aware conversational responses.
+    \end{itemize}
+
+    \item \textbf{Speech Processing:}
+    \begin{itemize}
+        \item Google Text-to-Speech API: Used to convert generated text responses into speech output.
+    \end{itemize}
+
+    \item \textbf{Animation and Rendering:}
+    \begin{itemize}
+        \item Unity Engine: Used to generate sign language animations by combining sequences of gesture videos.
+    \end{itemize}
+
+    \item \textbf{Database:}
+    \begin{itemize}
+        \item Video Database: Stores pre-recorded sign language gesture clips mapped to specific tokens.
+    \end{itemize}
+\end{itemize}
+
+This technology stack is selected to ensure scalability, real-time performance, and support for multi-modal interaction.
+
+% --------------------------------------------------
 
 \section{Coding Standards}
 \label{section:coding-standards}
-<TIP: Describe your coding standard for this project here. />
 
+To ensure code quality, maintainability, and collaboration efficiency, the TermTem project follows a set of standardized coding practices across all components.
+
+\subsection*{General Principles}
+\begin{itemize}
+    \item Code should be clean, readable, and well-structured.
+    \item Meaningful and descriptive naming conventions must be used for variables, functions, and classes.
+    \item Each function or module should have a single responsibility.
+    \item Comments should be used to explain complex logic but should not replace clear code.
+\end{itemize}
+
+\subsection*{Frontend (Flutter/Dart)}
+\begin{itemize}
+    \item Follow \textbf{CamelCase} for class names and \textbf{lowerCamelCase} for variables and methods.
+    \item Use widget-based modular design for UI components.
+    \item Separate UI logic and business logic where possible.
+    \item Maintain consistent file structure (e.g., screens, widgets, services).
+\end{itemize}
+
+\subsection*{Backend (Go)}
+\begin{itemize}
+    \item Follow official Go formatting standards using \texttt{gofmt}.
+    \item Use short, clear function names and avoid unnecessary complexity.
+    \item Organize code into packages such as handlers, services, and models.
+    \item Handle errors explicitly and consistently.
+\end{itemize}
+
+\subsection*{AI and Machine Learning}
+\begin{itemize}
+    \item Maintain clear separation between data preprocessing, model training, and inference code.
+    \item Use consistent naming for datasets, features, and labels.
+    \item Document model configurations, hyperparameters, and training procedures.
+\end{itemize}
+
+\subsection*{Version Control}
+\begin{itemize}
+    \item Use Git for version control.
+    \item Follow a consistent commit message format (e.g., feature, fix, improvement).
+    \item Use separate branches for feature development and merge through pull requests.
+\end{itemize}
 \section{Schedule}
 \label{section:schedule}
 <TIP: Show the schedule of your project.
